@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace MFApps\Application\Categories;
 
+use MFApps\Application\Assertion;
 use MFApps\Application\Json;
 
 final class Categories
@@ -27,6 +28,11 @@ final class Categories
         return new Categories(
             ...\array_map(
                 function (array $category) {
+                    Assertion::keyIsset($category, 'category_id');
+                    Assertion::keyIsset($category, 'translations');
+                    Assertion::keyIsset($category['translations'], 'pl_PL');
+                    Assertion::keyIsset($category['translations']['pl_PL'], 'name');
+
                     return new Category(
                         $category['category_id'],
                         $category['translations']['pl_PL']['name']

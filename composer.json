@@ -5,6 +5,10 @@
         "friendsofphp/php-cs-fixer": "^2.16"
     },
     "scripts": {
+        "tests": [
+            "@cs:php:test",
+            "phpunit tests"
+        ],
         "cs:php:test": [
             "php-cs-fixer fix -v --dry-run --using-cache=no",
             "phpstan analyse --level=6 --no-progress tests src"

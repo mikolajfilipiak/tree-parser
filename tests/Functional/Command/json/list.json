@@ -1,0 +1,29 @@
+[
+  {
+    "category_id": "1",
+    "order": "2",
+    "root": "1",
+    "in_loyalty": "0",
+    "translations": {
+      "pl_PL": {
+        "trans_id": "1",
+        "category_id": "1",
+        "name": "Kobiety",
+        "description": "",
+        "active": "1",
+        "pres_id": null,
+        "isdefault": "1",
+        "lang_id": "1",
+        "seo_title": "",
+        "seo_description": "",
+        "seo_keywords": "",
+        "seo_url": "",
+        "items": 1,
+        "attribute_groups": [
+          1,
+          2
+        ]
+      }
+    }
+  }
+]

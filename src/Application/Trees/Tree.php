@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace MFApps\Application\Trees;
 
+use MFApps\Application\Assertion;
+
 final class Tree
 {
     /**
@@ -25,12 +27,18 @@ final class Tree
     /**
      * @param array<mixed> $array
      * @return self
+     * @throws \Assert\AssertionFailedException
      */
     public static function fromArray(array $array) : self
     {
         if (empty($array['children'])) {
+            Assertion::keyIsset($array, 'id');
+
             return new self($array['id']);
         }
+
+        Assertion::keyIsset($array, 'id');
+        Assertion::keyIsset($array, 'children');
 
         return new self(
             (int) $array['id'],
