@@ -31,14 +31,12 @@ final class Tree
      */
     public static function fromArray(array $array) : self
     {
-        if (empty($array['children'])) {
-            Assertion::keyIsset($array, 'id');
-
-            return new self($array['id']);
-        }
-
         Assertion::keyIsset($array, 'id');
         Assertion::keyIsset($array, 'children');
+
+        if (empty($array['children'])) {
+            return new self($array['id']);
+        }
 
         return new self(
             (int) $array['id'],
@@ -74,7 +72,12 @@ final class Tree
     {
         return [
             'id' => $this->id,
-            'children' => $this->children,
+            'children' => \array_map(
+                function (Tree $tree) {
+                    return $tree->toArray();
+                },
+                $this->children
+            ),
         ];
     }
 }
