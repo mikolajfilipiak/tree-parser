@@ -7,7 +7,7 @@
     "scripts": {
         "cs:php:test": [
             "php-cs-fixer fix -v --dry-run --using-cache=no",
-            "phpstan analyse --level=8 --no-progress tests src"
+            "phpstan analyse --level=6 --no-progress tests src"
         ],
         "cs:php:fix": "php-cs-fixer fix --using-cache=no"
     },
@@ -22,6 +22,7 @@
         }
     },
     "require": {
-        "symfony/console": "^5.0"
+        "symfony/console": "^5.0",
+        "beberlei/assert": "^3.2"
     }
 }

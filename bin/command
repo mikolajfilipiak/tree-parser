@@ -6,6 +6,8 @@ declare (strict_types=1);
 require dirname(__DIR__).'/vendor/autoload.php';
 
 use Symfony\Component\Console\Application;
+use MFApps\Command\ParseCommand;
 
 $application = new Application();
+$application->add(new ParseCommand());
 $application->run();
