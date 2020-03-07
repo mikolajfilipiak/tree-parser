@@ -7,7 +7,7 @@ namespace MFApps\Tests\Unit\Application\Categories;
 use MFApps\Application\Categories\Categories;
 use MFApps\Application\Categories\Category;
 use MFApps\Application\Exception\InvalidAssertionException;
-use MFApps\Application\Json;
+use MFApps\Shared\Json;
 use MFApps\Tests\Unit\UnitTestCase;
 
 final class CategoriesTest extends UnitTestCase

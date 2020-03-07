@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace MFApps\Application\Trees;
 
-use MFApps\Application\Json;
+use MFApps\Shared\Json;
 
 final class Trees
 {

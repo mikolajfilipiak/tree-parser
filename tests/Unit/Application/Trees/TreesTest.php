@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace MFApps\Tests\Unit\Application\Trees;
 
 use MFApps\Application\Exception\InvalidAssertionException;
-use MFApps\Application\Json;
 use MFApps\Application\Trees\Tree;
 use MFApps\Application\Trees\Trees;
+use MFApps\Shared\Json;
 use MFApps\Tests\Unit\UnitTestCase;
 
 final class TreesTest extends UnitTestCase

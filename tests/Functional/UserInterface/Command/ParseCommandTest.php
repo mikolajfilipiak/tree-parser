@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace MFApps\Tests\Functional\Command;
+namespace MFApps\Tests\Functional\UserInterface\Command;
 
-use MFApps\Command\ParseCommand;
+use MFApps\UserInterface\Command\ParseCommand;
 
 final class ParseCommandTest extends CommandTestCase
 {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MFApps\Application;
+namespace MFApps\Shared;
 
 final class Json
 {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MFApps\Application\CombinedTrees;
+namespace MFApps\UserInterface\Model\CombinedTrees;
 
 use MFApps\Application\Categories\Categories;
 use MFApps\Application\Trees\Tree;

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace MFApps\Tests\Functional\Command;
+namespace MFApps\Tests\Functional\UserInterface\Command;
 
-use MFApps\Command\ParseCommand;
+use MFApps\UserInterface\Command\ParseCommand;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Application;
 use Symfony\Component\Console\Tester\CommandTester;
